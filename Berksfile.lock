@@ -1,0 +1,19 @@
+DEPENDENCIES
+  base
+    path: site-cookbooks/base
+  java
+    git: git@github.com:socrata-cookbooks/java.git
+    revision: eb1618039b841eb9cc031222f5c822c9dd2c7f81
+  wildfly
+    git: git@github.com:bdwyertech/chef-wildfly.git
+    revision: 2e420dc780c304e79bec07671e382bd7254405fc
+
+GRAPH
+  apt (2.4.0)
+  base (0.1.0)
+  java (1.22.1)
+  wildfly (0.1.9)
+    apt (>= 0.0.0)
+    java (~> 1.22)
+    yum (>= 0.0.0)
+  yum (3.2.2)
